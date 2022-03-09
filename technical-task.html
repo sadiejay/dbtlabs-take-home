@@ -12,11 +12,24 @@
                 text-decoration: none;
                 color: white;
                 background-color: green;
+                border: green 1px solid;
+                /* to avoid the "jumping" when hovering */
                 min-height: 44px;
-                text-align: center;
                 display: inline-flex;
+                /* aligns text */
+                align-items: center;
+                justify-content: center;
                 max-width: 100px;
-                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            .btn:hover {
+                background-color: white;
+                border: green 1px solid;
+                color:green;
+            }
+            .btn:visited {
+                color:white;
             }
 
             .customers-container {
