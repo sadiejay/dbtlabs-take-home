@@ -31,7 +31,13 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Screenshot
-![Screenshot 2021-12-09 at 22-13-33 Base Apparel Coming Soon](https://user-images.githubusercontent.com/19538219/145516742-522aadd6-26c9-4af8-947c-68e22ac658eb.png)
+### Mobile view
+![Screenshot 2022-03-09 at 16-56-14 Technical Task for L2](https://user-images.githubusercontent.com/19538219/157553712-aa840ba9-e0c0-4a12-b506-e59e70c074c4.png)
+
+### Desktop view
+![Screenshot 2022-03-09 at 16-55-51 Technical Task for L2](https://user-images.githubusercontent.com/19538219/157553745-e18ed897-376a-4812-a8ca-3d1286279b2d.png)
+
+
 
 
 ### Links
