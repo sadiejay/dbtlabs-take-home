@@ -50,7 +50,10 @@ This is a solution to the [dbt Lab take home challenge](#).
 - Add styling
     - focused on mobile-first layout with flexbox
     - added desktop media query
-    - used CSS for hover states 
+    - used CSS for hover states
+- Worked with 3 divs to see the layout
+- Then added the rest of the content
+    - Also updated some links that were provided
 
 ### Built with
 
