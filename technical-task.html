@@ -3,67 +3,66 @@
         <title>Technical Task for L2</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
         <style>
+            /* global styles */
             p,
             a {
                 font-weight: bold;
-            }
-
-            .btn {
-                text-decoration: none;
-                color: white;
-                background-color: green;
-                border: green 1px solid;
-                /* to avoid the "jumping" when hovering */
-                min-height: 44px;
-                display: inline-flex;
-                /* aligns text */
-                align-items: center;
-                justify-content: center;
-                max-width: 100px;
-                border-radius: 5px;
-            }
-
-            .btn:hover {
-                background-color: white;
-                border: green 1px solid;
-                color:green;
-            }
-            .btn:visited {
-                color:white;
-            }
-
-            .customers-container {
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                outline: black 3px dotted;
-            }
-            .customer-card {
-                width: 400px;
-                min-height: 300px;
-                /* forces cards to have the same height independent of content */
-                padding:10px;
-                display: flex;
-                flex-direction: column;
-                border: lightgrey 1px solid;
-                border-radius: 5px;
-                box-shadow: 2px 2px 0px 0px lightgrey;
             }
 
             img {
                 width: 100%;
             }
 
+            .btn {
+                display: inline-flex;
+                /* aligns text */
+                align-items: center;
+                justify-content: center;
+                min-height: 44px;
+                max-width: 120px;
+                text-decoration: none;
+                color: white;
+                background-color: teal;
+                border: teal 1px solid;
+                /* to avoid the "jumping" when hovering */
+                border-radius: 5px;
+            }
+
+            .btn:hover {
+                background-color: white;
+                border: teal 1px solid;
+                color:teal;
+            }
+            .btn:visited {
+                color:white;
+            }
+
+            /* container */
+            .customers-container {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            /* card */
+            .customer-card {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                min-height: 300px;
+                /* forces cards to have the same height independent of content */
+                padding:10px;
+                border: lightgrey 1px solid;
+                border-radius: 5px;
+                box-shadow: 2px 2px 0px 0px lightgrey;
+            }
+
             /* media query */
             @media only screen and (min-width: 500px) {
                 .customers-container{
                     flex-direction: row;
-                }
-
-                .customer-card {
-                    /* add flex basis thing */
                 }
             }
 
