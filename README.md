@@ -1,4 +1,4 @@
-# Email Generator
+# Customer Display
 
 
 This is a solution to the [dbt Lab take home challenge](#). 
@@ -21,14 +21,13 @@ This is a solution to the [dbt Lab take home challenge](#).
 ## Overview
 
 ### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the `form` is submitted if:
-  - The `input` field is empty
-  - The email address is not formatted correctly
+- Starting from the starter file ( technical-task-L2.html below) please build out this display of customers, their names, logos, and call-to-action buttons according to the comp in image 1 below.
+- You should use the customers array in the starter file to write each customer’s data as a child of div.customers-container .
+- Use vanilla HTML, CSS, and JS (ES6 okay) — no libraries or frameworks.
+- At mobile breakpoints (~500px wide or below), the customer cards should collapse to a single column. (See image 3 below)
+- When you hover one of the call-to-action buttons, the colors of the button should reverse. (See image 2 below).
+- We encourage you to start with and spend the most time on whatever piece feels most comfortable to you. If you are less comfortable with JS, you are welcome to start with static HTML on the page before you write the script — or vice versa. Show us what you are best at
+- Looking stuff up is fine and expected.
 
 ### Screenshot
 ### Mobile view
