@@ -3,17 +3,74 @@
         <title>Technical Task for L2</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
         <style>
-            
+            p,
+            a {
+                font-weight: bold;
+            }
+
+            .btn {
+                text-decoration: none;
+                color: white;
+                background-color: green;
+                min-height: 44px;
+                text-align: center;
+                display: inline-flex;
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
+
+            .customers-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                outline: black 3px dotted;
+                padding: 30px;
+            }
+            .customer-card {
+                width: 400px;
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+                outline: red 3px solid;
+                margin: 20px 0;
+                box-shadow: 5px 5px 0px 0px #000000;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            /* media query */
+            @media only screen and (min-width: 500px) {
+                .customers-container{
+                    flex-direction: row;
+                }
+
+                .customer-card {
+                    /* add flex basis thing */
+                }
+            }
+
         </style>
     </head>
     <body>
         <div class="customers-container">
-            <div class="customer-card">
-                <div class="customer-logo">
-                    <img src="https://www.getdbt.com/ui/img/customers/canva-logo.png" alt="Cavnva logo">
-                </div>
+            <div class="customer-card canva">
+                <img src="https://www.getdbt.com/ui/img/customers/canva-logo.png" alt="Cavnva logo">
                 <p class="customer-name">Canva</p>
-                <a class="customer-site" href="https://www.canva.com/" target="_blank">Visit Canva</a>
+                <a class="customer-site btn" href="https://www.canva.com/" target="_blank">Visit Canva</a>
+            </div>
+
+            <div class="customer-card casper">
+                <img src="https://www.getdbt.com/ui/img/customers/casper-sleep-logo.svg" alt="Casper logo">
+                <p class="customer-name">Casper</p>
+                <a class="customer-site btn" href="https://casper.com/" target="_blank">Visit Casper</a>
+            </div>
+
+            <div class="customer-card cisco">
+                    <img src="https://www.getdbt.com/ui/img/customers/cisco-logo.png" alt="Cisco logo">
+                <p class="customer-name">Cisco</p>
+                <a class="customer-site btn" href="https://www.cisco.com/" target="_blank">Visit Cisco</a>
             </div>
         </div>
         
