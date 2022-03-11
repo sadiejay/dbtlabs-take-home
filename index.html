@@ -84,18 +84,18 @@
                     // - a card-container div
                         // const newDiv = document.createElement("div")
                     // a p tag for the name
-                        // const companyNameNode = document.createElement("p");
+                        // const customerNameNode = document.createElement("p");
                         // add content
                             // let companyNameContent = document.createTextNode(${company.name});
                     // an img tag for img
                         // const companyImgNode = document.createElement("img");
                         // add content
-                            // let companyImgContent = document.getElementId('?'); --> maybe use class something?
-                            // companyImgContent.appendChild(companyImgNode);
+                            // let customerImgNode = document.getElementId('?'); --> maybe use class something?
+                            // customerImgNode.appendChild(companyImgNode);
                     // an a tag for the url
-                        // const companyLinkNode = document.createElement("a");
+                        // const customerLinkNode = document.createElement("a");
                         // add content
-                            // companyLinkNode.setAttribute('href', company.url);
+                            // customerLinkNode.setAttribute('href', company.url);
                             // link.textContent = `Visit ${company.name}`;
 
             customers.forEach(function(customers) {
@@ -106,21 +106,21 @@
               customersContainer.appendChild(customerCard);
             
             // an img tag for img
-            const companyImgNode = document.createElement("img");
-            companyImgNode.src = `${customers.img}`;
-            customerCard.appendChild(companyImgNode);
+            const customerImgNode = document.createElement("img");
+            customerImgNode.src = `${customers.img}`;
+            customerCard.appendChild(customerImgNode);
 
             // p tag for the name
-            const companyNameNode = document.createElement("p");
+            const customerNameNode = document.createElement("p");
             // let companyNameContent = document.createTextNode('${customers.name}')
-            companyNameNode.innerHTML = `${customers.name}`;
-            customerCard.appendChild(companyNameNode);
+            customerNameNode.innerHTML = `${customers.name}`;
+            customerCard.appendChild(customerNameNode);
 
             // an a tag for the url
-            const companyLinkNode = document.createElement("a");
-            companyLinkNode.setAttribute('href', customers.url);
-            companyLinkNode.textContent = `Visit ${customers.name}`;
-            customerCard.appendChild(companyLinkNode);
+            const customerLinkNode = document.createElement("a");
+            customerLinkNode.setAttribute('href', customers.url);
+            customerLinkNode.textContent = `Visit ${customers.name}`;
+            customerCard.appendChild(customerLinkNode);
             });
 
 
