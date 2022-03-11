@@ -3,9 +3,12 @@
         <title>Technical Task for L2</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
         <style>
-            .customers-containter{
+            .customers-container {
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
             }
 
             img {
@@ -15,13 +18,14 @@
             .customer-card {
                 display: flex;
                 flex-direction: column;
-
-            }
-
-            div {
-                outline: red 1px solid;
+                outline: lightgray 1px solid;
                 width: 300px;
                 min-height: 200px;
+            }
+
+            @media only screen and (min-width: 500px) {
+                .customers-container {
+                    flex-direction: row;
             }
 
         </style>
