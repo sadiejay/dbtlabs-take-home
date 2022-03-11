@@ -45,55 +45,71 @@ This is a solution to the [dbt Lab take home challenge](#).
 - Live Site URL: [https://sadiejay.github.io/dbtlabs-take-home/index](https://sadiejay.github.io/dbtlabs-take-home/index)
 
 ## My process
-- Built out basic HTML structure
-    - got one div structured first before copy and pasting using vscode shortcuts
-- Add styling
-    - focused on mobile-first layout with flexbox
-    - added desktop media query
-    - used CSS for hover states
-- Worked with 3 divs to see the layout
-- Then added the rest of the content
-    - Also updated some links that were provided
+- Using pseudocode
+  - Break down the design into chunks and write out what all needed to be created
+    - in order from Outside - Inside starting with the customers-container div
+      - the individual cards
+        - the company name
+        - company image
+        - company link
+  - Then google how to create dom elements with js
+    - insert needed code with an idea of keeping variable names consistent
+  - Look up `for each` loop syntax
+- Created the `for each` method and gave `customers` as the parameter
+- Logged my for each loop to see if it was working
+- Inserted my first element from pseduocode (individual cards)
+  - Create a style rule to see what was happening:
+  ```css
+  div {
+    outline: red 1px solid;
+  }
+  ```
+- Inserted the rest of my element as defined from pseduocode
+- Added styles as time allowed
 
 ### Built with
 
-- Semantic HTML5
-- Flexbox
-- Mobile-first workflow
+- Pseudocode
+- JS script
+- Stackoverflow
+- CSS Flexbox
+- Media queries
 
 
 ### What I learned
 
-- Need to declare height if you want all the cards the same outside of content
-- The order for link states matter!
+- I CAN DO IT!! 🙌🏾 🙌🏾 🙌🏾  I sorely underestimated myself and my abilities 😭 I'm excited to implement what I've learned in other projects, especially my in progress [email generator](https://github.com/sadiejay/email-generator)!
 
   #### code snippets
 
-```css
-    .customers-container {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
+```javascript
+const customerCard = document.createElement("div");
+  customerCard.className = "customer-card";
+  const customersContainer = document.querySelector('.customers-container');
+  customersContainer.appendChild(customerCard);
 ```
-  - `gap` vs `margin` is something I need to investigate, but it works great!
 
 
 ### Continued development
 
-- I would love to `align-self` the buttons to the bottom to create a more consistent look.
-    - as well as set the `aspect-ratio` for each logo and get them all the same size.
+- I could continue to add the styling for example to the a tags as well as play around with sizing of the cards.
+- I'm curious if I could add mulitle class names using js but I couldn't figure that out with the time I gave myself
 
-- Would also like to explore creating the site using JS to avoid hard coding. I think it could be done without a framework, by using some sort of `for` loop and then making the elements of the DOM using JS.
-    - I've never done it, but I'm tempted to try it.
 
 ### Useful resources
 
-- [Box shadow Generator](https://html-css-js.com/css/generator/box-shadow/) - Box shadow generator
-- [Styling Links Like a Boss](https://css-tricks.com/css-basics-styling-links-like-boss/) - Learned about link state styling order importance.
-- [Difference Between Width and Flex Basis](https://mastery.games/post/the-difference-between-width-and-flex-basis/) - was thinking to use flex basis but 
+- [Adding images to an HTML document with JavaScript](https://stackoverflow.com/questions/2735881/adding-images-to-an-html-document-with-javascript) - Trying to understand the syntax of adding an img and the src and this was super helpful.
+- [How to add <a> tag and href using javascript [duplicate]](https://stackoverflow.com/questions/45193524/how-to-add-a-tag-and-href-using-javascript) - Same with understanding how set the `href` attribute for the links.
+- [JavaScript forEach – How to Loop Through an Array in JS](https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/) - I was debating whether to do a for loop but I'm so glad I refreshed my memory on the forEach method. It's so much simpler.
+    (something like this for reference):
+    ```javascript
+    for (i = 0 i < customers.length i++){
+      ...
+    }
+    ```
+
+- [JavaScript- how to print p element inside div](https://stackoverflow.com/questions/39286511/javascript-how-to-print-p-element-inside-div) - Not only did this help for creating the p elements, but also for creating classes!
+- [Document.getElementsByClassName()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) - This is what I DON'T want - I think it's more useful for creating an array of elements with x class name.
 
 ## Author
 
@@ -101,4 +117,4 @@ This is a solution to the [dbt Lab take home challenge](#).
 
 
 ## Acknowledgments
- - Thank you dbt Labs for this opportunity!
+ - Thank you Thank you Thank you Lise and Rob. There are no words to express the depths of my gradtitude.
