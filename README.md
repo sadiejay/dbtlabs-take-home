@@ -31,10 +31,12 @@ This is a solution to the [dbt Lab take home challenge](#).
 
 ### Screenshot
 ### Mobile view
-![Screenshot 2022-03-09 at 16-56-14 Technical Task for L2](https://user-images.githubusercontent.com/19538219/157553712-aa840ba9-e0c0-4a12-b506-e59e70c074c4.png)
+![Screenshot 2022-03-11 at 00-50-16 Technical Task for L2](https://user-images.githubusercontent.com/19538219/157818011-a8ecc490-afa3-4d60-9575-d585cfa93ecc.png)
+
 
 ### Desktop view
-![Screenshot 2022-03-09 at 16-55-51 Technical Task for L2](https://user-images.githubusercontent.com/19538219/157553745-e18ed897-376a-4812-a8ca-3d1286279b2d.png)
+![Screenshot 2022-03-11 at 00-50-02 Technical Task for L2](https://user-images.githubusercontent.com/19538219/157817987-6117374a-403a-42c3-a406-c90df03809d1.png)
+
 
 
 
