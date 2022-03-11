@@ -3,6 +3,11 @@
         <title>Technical Task for L2</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
         <style>
+            div {
+                outline: red 1px solid;
+                width: 300px;
+                height: 200px;
+            }
 
         </style>
     </head>
@@ -73,6 +78,32 @@
                         // add content
                             // companyLinkNode.setAttribute('href', company.url);
                             // link.textContent = `Visit ${company.name}`;
+
+            customers.forEach(function(customers) {
+              // - a card-container div
+              const customerCard = document.createElement("div");
+              const customersContainer = document.querySelector('.customers-container');
+              customersContainer.appendChild(customerCard);
+            
+            // p tag for the name
+            const companyNameNode = document.createElement("p");
+            // let companyNameContent = document.createTextNode('${customers.name}')
+            companyNameNode.innerHTML = `${customers.name}`;
+            customerCard.appendChild(companyNameNode);
+
+            // an img tag for img
+            const companyImgNode = document.createElement("img");
+            companyImgNode.src = `${customers.img}`;
+            customerCard.appendChild(companyImgNode);
+
+            // an a tag for the url
+            const companyLinkNode = document.createElement("a");
+            companyLinkNode.setAttribute('href', customers.url);
+            companyLinkNode.textContent = `Visit ${customers.name}`;
+            customerCard.appendChild(companyLinkNode);
+            });
+
+
         
     </script>
 </html>
