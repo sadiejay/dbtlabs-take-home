@@ -3,120 +3,12 @@
         <title>Technical Task for L2</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1">
         <style>
-            /* global styles */
-            p,
-            a {
-                font-weight: bold;
-            }
-
-            img {
-                width: 100%;
-            }
-
-            .btn {
-                display: inline-flex;
-                /* aligns text */
-                align-items: center;
-                justify-content: center;
-                min-height: 44px;
-                max-width: 120px;
-                text-decoration: none;
-                color: white;
-                background-color: teal;
-                border: teal 1px solid;
-                /* to avoid the "jumping" when hovering */
-                border-radius: 5px;
-            }
-
-            .btn:hover {
-                background-color: white;
-                border: teal 1px solid;
-                color:teal;
-            }
-            .btn:visited {
-                color:white;
-            }
-
-            /* container */
-            .customers-container {
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-            }
-            
-            /* card */
-            .customer-card {
-                display: flex;
-                flex-direction: column;
-                width: 350px;
-                min-height: 300px;
-                /* forces cards to have the same height independent of content */
-                padding:10px;
-                border: lightgrey 1px solid;
-                border-radius: 5px;
-                box-shadow: 2px 2px 0px 0px lightgrey;
-            }
-
-            /* media query */
-            @media only screen and (min-width: 500px) {
-                .customers-container{
-                    flex-direction: row;
-                }
-            }
 
         </style>
     </head>
     <body>
         <div class="customers-container">
-            <div class="customer-card canva">
-                <img src="https://www.getdbt.com/ui/img/customers/canva-logo.png" alt="Cavnva logo">
-                <p class="customer-name">Canva</p>
-                <a class="customer-site btn" href="https://www.canva.com/" target="_blank">Visit Canva</a>
-            </div>
-
-            <div class="customer-card casper">
-                <img src="https://www.getdbt.com/ui/img/customers/casper-sleep-logo.svg" alt="Casper logo">
-                <p class="customer-name">Casper</p>
-                <a class="customer-site btn" href="https://casper.com/" target="_blank">Visit Casper</a>
-            </div>
-
-            <div class="customer-card cisco">
-                    <img src="https://www.getdbt.com/ui/img/customers/cisco-logo.png" alt="Cisco logo">
-                <p class="customer-name">Cisco</p>
-                <a class="customer-site btn" href="https://www.cisco.com/" target="_blank">Visit Cisco</a>
-            </div>
-            <div class="customer-card domain">
-                <img src="https://www.getdbt.com/ui/img/customers/domain-logo.svg" alt="Domain logo">
-                <p class="customer-name">Domain</p>
-                <a class="customer-site btn" href="https://www.domain.com/" target="_blank">Visit Domain</a>
-            </div>
-
-            <div class="customer-card gitlab">
-                <img src="https://www.getdbt.com/ui/img/customers/gitlab-logo.svg" alt="GitLab logo">
-                <p class="customer-name">GitLab</p>
-                <a class="customer-site btn" href="https://www.gitlab.com/" target="_blank">Visit GitLab</a>
-            </div>
-
-            <div class="customer-card hubspot">
-                    <img src="https://www.getdbt.com/ui/img/customers/hubspot-logo.svg" alt="Hubspot logo">
-                <p class="customer-name">Hubspot</p>
-                <a class="customer-site btn" href="https://www.hubspot.com/" target="_blank">Visit Hubspot</a>
-            </div>
-            <div class="customer-card jetblue">
-                <img src="https://www.getdbt.com/ui/img/customers/jetblue-airways-logo.svg" alt="JetBlue logo">
-                <p class="customer-name">JetBlue</p>
-                <a class="customer-site btn" href="https://www.jetblue.com/" target="_blank">Visit JetBlue</a>
-            </div>
-
-            <div class="customer-card kickstarter">
-                <img src="https://www.getdbt.com/ui/img/customers/kickstarter-logo.svg" alt="Kickstarter logo">
-                <p class="customer-name">Kickstarter</p>
-                <a class="customer-site btn" href="https://www.kickstarter.com/" target="_blank">Visit Kickstarter</a>
-            </div>
         </div>
-        
     </body>
     <script>
         const customers = [
